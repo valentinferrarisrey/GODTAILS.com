@@ -7,39 +7,59 @@
         <meta name="author" content="Valentin Ferraris Rey LINKstart">
         <meta name="robots" content="index">
         <meta name="robots" content="follow">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='style.css'>
         <title>GODTAILS</title>
         <link rel="icon" href="icono3.ico">
     </head>
     <body>
         <header>
-            <h1>GODTAILS.COM</h1>
-            <h3>Las mejores recetas de los mejores cocktails.</h3>
+            <h1 class="encabezado">GODTAILS.COM</h1>
+            <h3 class="encabezado">Las mejores recetas de los mejores cocktails.</h3>
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="recetas.html">RECETAS</a></li>
-                <li><a href="info.html">SOBRE MI</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li class="nav" id="homenav"><a href="index.html">HOME</a></li>
+                <li class="nav" id="recipesnav"><a href="recetas.html">RECETAS</a></li>
+                <li class="nav" id="infonav"><a href="info.html">SOBRE MI</a></li>
             </ul>
         </nav>
-        <article>
-            <h2>Recetas sugeridas:</h2>
-            <section><h4>receta 1</h4></section>
-            <section><h4>receta 2</h4></section>
-            <section><h4>receta 3</h4></section>
-        </article>
+        <main>
+        <div id="divBuscador">
+          <input type="search" id="buscador" placeholder="Ron,Gin o Vodka?">
+          <button id="buscar">buscar recetas</button>
+          <h6 id="busquedasRecientes" class="busqueda">Busquedas recientes: </h6>
+        </div>
+        <div id="resultados"></div>
+        <section id="recetas">
+            <h2 id="recetasSugeridas">Recetas sugeridas:</h2>
+            <article id="trago1">
+                <h4 id="nombreTrago1"></h4>
+                <p id="receta1"></p>
+            </article>
+            <article id="trago2">
+                <h4 id="nombreTrago2"></h4>
+                <p id="receta2"></p>
+            </article>
+            <article id="trago3">
+                <h4 id="nombreTrago3"></h4>
+                <p id="receta3"></p>
+            </article>
+        </section>
+        </main>
         <aside>
-            <h4>Elige tragos en base a tu bebida favorita!!</h4>
-            <p>Ron</p>
-            <p>Gin</p>
-            <p>Vodka</p>
-            <p>Whiskey</p>
-            <p>Brandy</p>
+            <h4 id="titulo-aside">Elige tragos en base a tu bebida favorita!!</h4>
+            <p><a>Ron</a></p>
+            <p><a>Gin</a></p>
+            <p><a>Vodka</a></p>
+            <p><a>Whiskey</a></p>
+            <p><a>Brandy</a></p>
         </aside>
         <footer>
             <h4>De un <b>bartender</b> para el <b>mundo</b>.</h4>
             <p>Hecha y escrita por <i>Valentin Ferraris Rey</i> desde la mismísima Argentina.</p>       
         </footer>
+        <script src="archivo3.js"></script>
     </body>
 </html>

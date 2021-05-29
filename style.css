@@ -1,0 +1,50 @@
+*{
+    background-color: rgb(3, 3, 90);
+    color:khaki;
+    font-family: "Sen", Helvetica, sans-serif;
+}
+
+.encabezado{
+    background-color: darkred;
+    margin: 1px;
+}
+
+header{
+    background-color: darkred;
+    margin: 1px;
+}
+ul{
+    background: rgb(99, 38, 69);
+    padding: 1px;
+    margin: 1px;
+}
+.nav{
+    display: inline-block;
+}
+
+button{
+    background: rgb(63, 147, 202);
+    display: block;
+}
+input{
+    margin: 10px;
+}
+#recetasSugeridas {
+background: rgba(155, 88, 40,.7);
+
+
+display: inline-block;
+}
+.busqueda{
+    display: inline;
+}
+aside{
+    background: rgba(155, 88, 40,.7);
+}
+a{
+    background: rgba(155, 88, 40,.7);
+    display: block;
+}
+#titulo-aside {
+    background: rgba(155, 88, 40,.7);
+}
