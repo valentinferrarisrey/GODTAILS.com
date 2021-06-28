@@ -1,3 +1,4 @@
+<!-- ABRIR CON LIVE SERVER-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -15,51 +16,66 @@
     </head>
     <body>
         <header>
-            <h1 class="encabezado">GODTAILS.COM</h1>
-            <h3 class="encabezado">Las mejores recetas de los mejores cocktails.</h3>
+            <h1 class="encabezado" id="god">GOD</h1><h1 class="encabezado" id="tails">TAILS</h1>
+            <h3 id="slogan">Las mejores recetas de los mejores cocktails.</h3>
         </header>
         <nav>
             <ul>
-                <li class="nav" id="homenav"><a href="index.html">HOME</a></li>
-                <li class="nav" id="recipesnav"><a href="recetas.html">RECETAS</a></li>
-                <li class="nav" id="infonav"><a href="info.html">SOBRE MI</a></li>
+                <li class="nav"><a id="homenav" class="navlink" href="index.html">HOME</a></li>
+                <li class="nav"><a id="recipesnav" class="navlink" href="recetas.html">RECETAS</a></li>
+                <li class="nav"><a id="infonav" class="navlink" href="info.html">SOBRE MI</a></li>
             </ul>
+            <div id="divBuscador">
+                <input type="search" id="buscador" placeholder="Ron, gin, vodka, whiskey o brandy?">
+                <button id="buscar">buscar recetas</button>
+                <div id="error"></div>
+                <br><h6 id="busquedasRecientes">Busquedas recientes: </h6>
+            </div>
         </nav>
+        <aside>
+            <h4 id="titulo-aside">Elige tragos en base a tu bebida favorita!!</h4>
+            <p class="asideEntrada"><a class="asideLink" id="asideRon">Ron</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideGin">Gin</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideVodka">Vodka</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideWhiskey">Whiskey</a><p>
+            <p class="asideEntrada"><a class="asideLink" id="asideBrandy">Brandy</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideTequila">Tequila</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideVino">Vino</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideAperol">Aperol</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideGancia">Gancia</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideCynar">Cynar</a></p>
+            <p class="asideEntrada"><a class="asideLink" id="asideFernet">Fernet</a></p>
+        </aside>
         <main>
-        <div id="divBuscador">
-          <input type="search" id="buscador" placeholder="Ron,Gin o Vodka?">
-          <button id="buscar">buscar recetas</button>
-          <h6 id="busquedasRecientes" class="busqueda">Busquedas recientes: </h6>
-        </div>
-        <div id="resultados"></div>
-        <section id="recetas">
-            <h2 id="recetasSugeridas">Recetas sugeridas:</h2>
+        <section id="info"><p>En esta página se encuentran las mejores recetas para que armes lo mejores cocktails y tragos para tus amigos y familia, para ello esta página brinda las sigientes funcionalidades:<br>-Busqueda por buscador de bebidas que devuelve tragos recomendados con base en esa bebida y información básica de la misma.<br>-Sistema de busquedas recientes para el buscador en base a localStorage y JSON.<br>-Busqueda por aside de bebidas que devuelve todos los tragos con base en esa bebida.<br>-Pestaña de recetas que muestra las 100 recetas de tragos cargadas en el JSON estático.<br>-Busqueda por trago/cocktail en la pestaña de recetas.</p></section>
+        <section id="rtaAside"></section> 
+        <div style="display: none" id="resultados"></div>
+        <section style="display: none" id="recetas">
+            <div id="recetasSugeridas"></div>
             <article id="trago1">
-                <h4 id="nombreTrago1"></h4>
+                <h4 id="nombreTrago1" class="nombreTrago"></h4>
                 <p id="receta1"></p>
             </article>
             <article id="trago2">
-                <h4 id="nombreTrago2"></h4>
+                <h4 id="nombreTrago2" class="nombreTrago"></h4>
                 <p id="receta2"></p>
             </article>
             <article id="trago3">
-                <h4 id="nombreTrago3"></h4>
+                <h4 id="nombreTrago3" class="nombreTrago"></h4>
                 <p id="receta3"></p>
+            </article>
+            <article id="trago4">
+                <h4 id="nombreTrago4"></h4>
+                <p id="receta4"></p>
             </article>
         </section>
         </main>
-        <aside>
-            <h4 id="titulo-aside">Elige tragos en base a tu bebida favorita!!</h4>
-            <p><a>Ron</a></p>
-            <p><a>Gin</a></p>
-            <p><a>Vodka</a></p>
-            <p><a>Whiskey</a></p>
-            <p><a>Brandy</a></p>
-        </aside>
         <footer>
-            <h4>De un <b>bartender</b> para el <b>mundo</b>.</h4>
-            <p>Hecha y escrita por <i>Valentin Ferraris Rey</i> desde la mismísima Argentina.</p>       
+            <h4 id="tituloFooter">De un <b>bartender</b> para el <b>mundo</b>.</h4>
+            <p id="parrafoFooter">Hecha y escrita por <i>Valentin Ferraris Rey</i> desde la mismísima Argentina.</p>       
         </footer>
-        <script src="archivo3.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+        <script src="aside.js"></script>
     </body>
 </html>

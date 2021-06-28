@@ -1,0 +1,818 @@
+[
+    {
+        "id": 1,
+        "nombre": "Julepe de Cynar",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz de Cynar, 2/3 ramas de menta, 0.5oz de jugo de limón, 2cda de azucar (si es negra mejor) o 1oz de almíbar, completar con jugo o gaseosa de pomelo. Garnish: menta y/o rodaja de pomelo.",
+        "bebidaBase": "cynar",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": 2,
+        "nombre": "Rosso´s Cynar Julepe",
+        "info": "directo, vaso largo, variacion original del autor",
+        "ingredientes": "1.5oz de Cynar, 2/3 ramas de menta, 0.5oz de vermut rosso, 0.5oz de jugo de limón, 2cda de azucar o 1oz de almíbar, completar con jugo o gaseosa de pomelo. Garnish: menta y/o rodaja de pomelo.",
+        "bebidaBase": "cynar",
+        "tipo": "aperitivo/refrescante"
+    },
+    {
+        "id": 3,
+        "nombre": "Americano",
+        "info": "directo, vaso largo",
+        "ingredientes": "1oz de red bitter(por ej: Campari), 1oz de vermut rosso, completa con soda. Garnish: rodaja de naranja.",
+        "bebidaBase": "vermut",
+        "tipo": "aperitivo/refrescante"
+    },
+    {
+        "id": 4,
+        "nombre": "Alexander",
+        "info": "batido, copa cóctel",
+        "ingredientes": "1oz de gin, 1oz de licor de crema de cacao (o chocolate), 1oz de crema de leche. Garnish: ralladura de nuez moscada o cacao tamizado espolvoreado",
+        "bebidaBase": "gin",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": 5,
+        "nombre": "Brandy Alexander",
+        "info": "batido, capa cóctel",
+        "ingredientes": "1oz de gin, 1oz de licor de crema de cacao (o chocolate), 1oz de crema de leche. Garnish: ralladura de nuez moscada o cacao tamizado espolvoreado",
+        "bebidaBase": "brandy",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": 6,
+        "nombre": "Bloody Mary",
+        "info": "directo/batido, vaso largo",
+        "ingredientes": "1oz de jugo de lima/limón, 1cda de salsa inglesa, pimienta negra a gusto, una pizca de sal de apio (o normal si no tienen), 2 gotas de salsa picante, 2oz de vodka, completar con jugo de tomate. Garnish: rama de apio.",
+        "bebidaBase": "vodka",
+        "tipo": "especiado"
+    },
+    {
+        "id": 7,
+        "nombre": "Spritz",
+        "info": "directo, copa grande/vaso largo",
+        "ingredientes": "2oz de Aperol (o algun otro spritz), 3oz de ProSeco (cava, champagne, vino espumante), 1oz de soda. Garnish: rodaja de naranja.",
+        "bebidaBase": "aperol",
+        "tipo": "aperitivo, refrescante"
+    },
+    {
+        "id": 8,
+        "nombre": "Soda Spritz",
+        "info": "directo, copa grande/vaso largo",
+        "ingredientes": "2oz de Aperol (o algun otro spritz), completar con soda. Garnish: rodaja de naranja.",
+        "bebidaBase": "aperol",
+        "tipo": "aperitivo, refrescante"
+    },
+    {
+        "id": 9,
+        "nombre": "Negroni",
+        "info": "directo/refrescado, vaso corto (u old fashioned)",
+        "ingredientes": "1oz de gin, 1oz de vermut rosso, 1oz de red bitter (Campari). Garnish: twist o rodaja de naranja",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": 10,
+        "nombre": "Contessa",
+        "info": "directo/refrescado, vaso corto (u old fashioned)",
+        "ingredientes": "1oz de gin, 1oz de vermut seco, 1oz de Aperol. Garnish: twist o rodaja de naranja",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "11",
+        "nombre": "Dry Martini",
+        "info": "refrescado, copa cóctel(o martini)",
+        "ingredientes": "2.5oz de gin london dry, 0.5/0.75oz de vermut seco o vermut bianco, twist de limón. Garnish: 1 ó 3 aceitunas y/o cáscara de limón.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id":"12" ,
+        "nombre": "Espresso Martini",
+        "info": "batido y colado, copa cóctel (o martini)",
+        "ingredientes": "1.5oz de vodka, 1oz de café espresso, 0.75oz de licor de café, 1 dash de almíbar (opcional), pizca de café instantanéo para buena espuma (opcional). Garnish: 3 granos de café.",
+        "bebidaBase": "vodka",
+        "tipo": "recontituyente"
+    },
+    {
+        "id": "13",
+        "nombre": "French 75",
+        "info": "batido y colado, vaso largo",
+        "ingredientes": "1oz de gin, 0.5oz de jugo de limón, 0.5oz de almíbar, completar con champagne (cava, espumosos seco). Garnish: twist de limón.",
+        "bebidaBase": "gin",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "14",
+        "nombre": "Gimlet",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "2oz de gin, 1oz de jugo de limón, 0.5oz de almíbar. Garnish: rodaja o twist de lima/limón.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "15",
+        "nombre": "Gin Basil Smash",
+        "info": "machacado, batido y colado, copa cóctel",
+        "ingredientes": "2oz de gin london dry, 0.75oz de jugo de limón, 0.5oz de almíbar, 12 hojas de albahaca. Garnish: ramita/hojas de albahaca.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "16",
+        "nombre": "Grog",
+        "info": "batido y colado, vaso corto",
+        "ingredientes": "2oz de ron, 3cdas de miel, 1oz de jugo de lima, 3 dash de bitter Angostura, 1.5oz de soda. Garnish: rodaja de limón.",
+        "bebidaBase": "ron",
+        "tipo": "reconstituyente"
+    },
+    {
+        "id": "17",
+        "nombre": "Hanky Panky",
+        "info": "refrescado y colado, copa cóctel",
+        "ingredientes": "1.5oz de gin london dry, 1.5oz vermut rosso, 2 dash de Fernet. Garnish: twist de naranja.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "18",
+        "nombre": "Intro to Aperol",
+        "info": "batido y colado, copa coupe",
+        "ingredientes": "2oz de Aperol, 1oz de gin, 0.75oz de jugo de limón, 0.25oz (dash) de almíbar simple o triple sec, 1 dash de bitter Angostura. Garnish: twist de naranja.",
+        "bebidaBase": "aperol",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "19",
+        "nombre": "Jungle Bird",
+        "info": "batido y colado, vaso corto o tiki mug",
+        "ingredientes": "1.5oz de ron, 1.5 de jugo de ananá/piña, 0.5oz de red bitter (Campari), 0.5oz de jugo de lima, 1 dash de almíbar. Garnish: hojas de ananá/piña",
+        "bebidaBase": "ron",
+        "tipo": "reconstituyente"
+    },
+    {
+        "id": "20",
+        "nombre": "Kamikaze/Balalaika",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "2oz de vodka, 1oz de triple sec, 1oz de jugo de limón.",
+        "bebidaBase": "vodka",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "21",
+        "nombre": "Destornillador",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz vodka, 5oz (coompletar) de jugo de naranja o gaseosa de naranja, dash de soda (opcional)",
+        "bebidaBase": "vodka",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "22",
+        "nombre": "Lucien Gaudin",
+        "info": "refrescado y colado, copa coupe o cóctel",
+        "ingredientes": "1.5oz de gin london dry, 0.75oz de triple sec, 0.75oz de red bitter (Campari), 0.75oz de vermut rosso. Garnish: twist de naranja.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "23",
+        "nombre": "Garibaldi",
+        "info": "directo, vaso largo",
+        "ingredientes": "1.5/2oz de red bitter (Campari), 5oz/completar con jugo de naranja. Garnish: rodaja de naranja.",
+        "bebidaBase": "campari",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "24",
+        "nombre": "Horse´s Neck",
+        "info": "directo, vaso largo",
+        "ingredientes": "1.5oz de whiskey, 5oz/completar con ginger ale (reemplazable por gaseosa lima-limón), dash de bitter Angostura (opcional). Garnish: twist de limón.",
+        "bebidaBase": "whiskey",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "25",
+        "nombre": "Sea Breeze",
+        "info": "directo, vaso largo",
+        "ingredientes": "1.5oz de vodka, 4oz de jugo de arándanos, 1oz de jugo de pomelo. Garnish: rodaja de lima.",
+        "bebidaBase": "vodka",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "26",
+        "nombre": "Long Island Iced Tea",
+        "info": "directo, vaso largo",
+        "ingredientes": "0.5oz de vodka, 0.5oz de ron blanco, 0.5oz de gin, 0.5oz de tequila, 0.5oz de triple sec, 1oz de almíbar, 0.75oz de jugo de limón, completar con coca-cola. Garnish: twist de limón.",
+        "bebidaBase": "vodka, gin, ron, tequila",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "26",
+        "nombre": "Tequila Sunrise",
+        "info": "directo, vaso largo",
+        "ingredientes": "1.5oz de tequila, completar con jugo de naranja, 0.5oz de granadina. Garnish: rodaja de naranja.",
+        "bebidaBase": "tequila",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "27",
+        "nombre": "Pico y Pomelo",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz de Amargo Obrero, 0.75oz de jugo de limón, 0.75oz de almíbar, completar con jugo/gaseosa de pomelo. Garnish: rodaja de pomelo.",
+        "bebidaBase": "amargo obrero",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "28",
+        "nombre": "Mojito",
+        "info": "directo machacado, vaso largo",
+        "ingredientes": "12 hojas de menta (3 ramitas), 2oz de ron blanco, 1oz de jugo de limón, 2cda de azucar o 1oz de almíbar, 1 dash/completar con soda, 1 dash de bitter Angostura (opcional).",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "29",
+        "nombre": "Mojigata",
+        "info": "directo machacado, vaso largo",
+        "ingredientes": "12 hojas de menta (3 ramitas), 2oz de ron blanco, 1oz de jugo de limón, 2cda de azucar o 1oz de almíbar, completar con tu cerveza de elección.",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "30",
+        "nombre": "Tom Collins",
+        "info": "batido o directo, vaso largo",
+        "ingredientes": "2oz de gin london dry, 1oz de jugo de limón, 1oz de almíbar, completar con soda. Garnish: rodaja de limón y/o cereza.",
+        "bebidaBase": "gin",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "31",
+        "nombre": "Bronx",
+        "info": "batido, copa coupe",
+        "ingredientes": "1.5oz de gin, 0.5oz de vermut seco, 1oz de vermut rosso, 1oz de jugo de naranja.",
+        "bebidaBase": "gin",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "32",
+        "nombre": "Pisco Sour",
+        "info": "batido y colado, vaso corto/copa flauta",
+        "ingredientes": "2oz de pisco, 1oz de jugo de lima/limón, 1oz de almíbar, 1/0.5 clara de huevo (opcional). Garnish: 3 gotas de bitter Angostura.",
+        "bebidaBase": "pisco",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "33",
+        "nombre": "Piscola",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz de pisco, 5oz/completar con coca cola (aprox. 30/70 de proporción).",
+        "bebidaBase": "pisco",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "34",
+        "nombre": "Daiquiri",
+        "info": "batido, copa cóctel",
+        "ingredientes": "2oz de ron blanco, 1oz de almíbar, 1oz de jugo de limón. Garnish: rodaja de limón.",
+        "bebidaBase": "ron",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "35",
+        "nombre": "Frozen Daiquiri",
+        "info": "licuado, vaso largo/copa grande",
+        "ingredientes": "2oz de ron blanco (se puede reemplazar por vodka), 0.5oz de jugo de limón, 1oz de almíbar, 125gr de fruta a eleccion, gotas de marrasquino (opcional). Garnish: trozo de la fruta elegida.",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "36",
+        "nombre": "White Lady",
+        "info": "batido y doble colado, copa cóctel",
+        "ingredientes": "2oz de gin, 1oz de jugo de limón, 1oz de triple sec, 0.5 clara de huevo.",
+        "bebidaBase": "gin",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "37",
+        "nombre": "Sweet Lady",
+        "info": "batido y doble colado, copa cóctel, variación original del autor",
+        "ingredientes": "2oz de gin, 1oz de jugo de limón, 1oz de triple sec, 1oz de almíbar, 0.5 clara de huevo.",
+        "bebidaBase": "gin",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "38",
+        "nombre": "Sidecar",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "2oz de brandy/cognac, 1oz de jugo de limón, 1oz de triple sec, 1 dash de almíbar.",
+        "bebidaBase": "brandy",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "39",
+        "nombre": "Chelsea Sidecar",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "2oz de gin, 1oz de jugo e limón, 1oz de triple sec, 1 dash de almíbar.",
+        "bebidaBase": "gin",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "40",
+        "nombre": "XYZ Cocktail",
+        "info": "batido y doble colado, copa cóctel",
+        "ingredientes": "2oz de ron, 1oz de triple sec, 1oz de jugo de limón",
+        "bebidaBase": "ron",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "41",
+        "nombre": "Cosmopolitan",
+        "info": "batido y doble colado, copa cóctel",
+        "ingredientes": "1.75oz de vodka, 0.5oz de triple sec, 1oz de jugo de arándanos, 0.5oz de jugo de lima, 0.5oz de almíbar (opcional). Garnish: twist de lima.",
+        "bebidaBase": "vodka",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "42",
+        "nombre": "Gancia Batido",
+        "info": "batido, vaso largo",
+        "ingredientes": "4oz de Gancia, 1oz de jugo de limón, 1oz de almíbar. Garnish: rodaja de limón.",
+        "bebidaBase": "gancia",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "43",
+        "nombre": "Bramble",
+        "info": "directo/batido, vaso corto",
+        "ingredientes": "1.5oz de gin, 0.5oz de jugo de limón, 1oz de almíbar, 0.5oz de licor de cassis. Garnish: rodaja de limón y moras.",
+        "bebidaBase": "gin",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "44",
+        "nombre": "Lemon Drop",
+        "info": "batido, copa cóctel",
+        "ingredientes": "1.5oz de vodka, 1oz de triple sec, 0.5oz de jugo de limón, 0.5oz de almíbar. garnish: rodaja de limón.",
+        "bebidaBase": "vodka",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "45",
+        "nombre": "French Martini",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "1.5oz de vodka, 0.5oz de licor de cassis o frambuesa, 0.5oz de jugo de piña.",
+        "bebidaBase": "vodka",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "46",
+        "nombre": "Caipirinha",
+        "info": "machacado (directo o batido), vaso corto",
+        "ingredientes": "2oz de cachaca, 2tbs de azúcar o 1oz de almíbar, 0.5 lima.",
+        "bebidaBase": "cachaca",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "47",
+        "nombre": "Caipirissima",
+        "info": "machacado (directo o batido), vaso corto",
+        "ingredientes": "2oz de ron blanco, 2tbs de azúcar o 1oz de almíbar, 0.5 lima.",
+        "bebidaBase": "ron",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "48",
+        "nombre": "Caipiroska",
+        "info": "machacado (directo o batido), vaso corto",
+        "ingredientes": "2oz de vodka, 2tbs de azúcar o 1oz de almíbar, 0.5 lima.",
+        "bebidaBase": "vodka",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "49",
+        "nombre": "Caipiroska de Maracuyá",
+        "info": "machacado (directo o batido), vaso corto",
+        "ingredientes": "2oz de vodka, 2tbs de azúcar o 1oz de almíbar, 0.5 lima, 1tbs de pulpa de maracuyá.",
+        "bebidaBase": "vodka",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "50",
+        "nombre": "Planters Punch",
+        "info": "batido, vaso largo",
+        "ingredientes": "1.5oz de ron oscuro, 1oz de jugo de naranja, 0.75oz de jugo de limón/lima, 1oz de jugo de piña, 0.25oz/1dash de granadina, 0.25oz/1dash de almíbar, 3 dash de bitter Angostura. Garnish: rodaja de piña y cereza.",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "51",
+        "nombre": "Margarita",
+        "info": "batido, copa cóctail o copa margarita",
+        "ingredientes": "2oz de tequila, 1oz de triple sec, 0.75oz de jugo de lima/limón, 0.75oz de almíbar (opcional). Garnish: corona de sal y rodaja de lima.",
+        "bebidaBase": "tequila",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "52",
+        "nombre": "Margarita Frozen",
+        "info": "licuado, vaso largo",
+        "ingredientes": "2oz de tequila, 1oz de triple sec, 0.75oz de jugo de lima/limón, 2tbs de azúcar, hielo. Garnish: corona de sal y rodaja de lima.",
+        "bebidaBase": "tequila",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "53",
+        "nombre": "Piña Colada",
+        "info": "licuado, vaso largo",
+        "ingredientes": "2oz de ron blanco, 1oz de leche o crema de coco, 3oz de jugo de piña, 1oz de almíbar (opcional), 0.5oz de jugo de limón (opcional), hielo. Garnish: rodaja de piña y cereza.",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "54",
+        "nombre": "Mai Tai",
+        "info": "batido, vaso corto/tikimug con hielo",
+        "ingredientes": "1.25oz de ron blanco, 0.75oz de ron óscuro, 0.5oz de jugo de limón, 0.5oz de triple sec, 0.5oz de almíbar, 1oz de horchata (opcional). Garnish: orquidéa, cerezas o rodaja de piña.",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "55",
+        "nombre": "Gin Tonic",
+        "info": "directo, vaso largo",
+        "ingredientes": "1.5/2oz de gin london dry, 5oz/completar con agua tónica. Garnish: twist de limón o lima.",
+        "bebidaBase": "gin",
+        "tipo": "aperitivo/refrescante"
+    },
+    {
+        "id": "56",
+        "nombre": "Mint Julep",
+        "info": "directo y macerado, vaso largo o julep",
+        "ingredientes": "2oz de bourbon o rye (tipos de whiskeys), 1oz de almíbar o 2tbs de azúcar, 4 ramitas de menta, soda (opcional). Garnish: hojas de menta.",
+        "bebidaBase": "whiskey",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "57",
+        "nombre": "Old Fashioned",
+        "info": "directo/refrescado, vaso corto o Old fashioned",
+        "ingredientes": "1.5oz de bourbon/whiskey de preferencia, 1tbs de azúcar o 0.5oz de almíbar, 2 ó 3 dashes de bitter Angostura. Garnish: rodaja de naranja y/o 2 cerezas.",
+        "bebidaBase": "whiskey",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "58",
+        "nombre": "Old Fashioned (Estilo Argentino)",
+        "info": "directo/refrescado, vaso corto o Old fashioned",
+        "ingredientes": "1.5oz de bourbon/whiskey de preferencia, 1tbs de azúcar o 0.5oz de almíbar, 2 ó 3 dashes de bitter Angostura, dash de agua/soda/jugo de naranja. Garnish: twist de limón.",
+        "bebidaBase": "whiskey",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "59",
+        "nombre": "Rhum Fashioned",
+        "info": "directo/refrescado, vaso corto o Old fashioned",
+        "ingredientes": "1.5oz de ron de preferencia, 1tbs de azúcar o 0.5oz de almíbar, 2 ó 3 dashes de bitter Angostura. Garnish: rodaja de naranja y/o 2 cerezas.",
+        "bebidaBase": "ron",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "60",
+        "nombre": "Call Me Old Fashioned",
+        "info": "directo/refrescado, vaso corto o Old fashioned",
+        "ingredientes": "1.5oz de brandy/cogñac de preferencia, 1tbs de azúcar o 0.5oz de almíbar, 2 ó 3 dashes de bitter Angostura. Garnish: rodaja de naranja y/o 2 cerezas.",
+        "bebidaBase": "brandy",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "61",
+        "nombre": "Manhattan",
+        "info": "directo, copa cóctel",
+        "ingredientes": "2oz de bourbon o rye (tipos de whiskeys), 0.75oz de vermut rosso, 1 dash de bitter Angostura. Garnish: cereza.",
+        "bebidaBase": "whiskey",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "62",
+        "nombre": "Gin Fizz",
+        "info": "batido, vaso largo",
+        "ingredientes": "1.5oz de gin, 1oz de jugo de limón, 0.25oz de almíbar simple, 1 clara de huevo (opcional), completar con soda.",
+        "bebidaBase": "gin",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "63",
+        "nombre": "Aviation",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "2oz de gin london dry, 0.5oz de licor de marrosquino, 0.5oz de jugo de limón, 1tbs de creme de Violette. Garnish: twist de limón y cereza.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "64",
+        "nombre": "Sazerac",
+        "info": "refrescado, vaso corto",
+        "ingredientes": "2oz de brandy o whiskey, 2 dash de bitter Paycheaud, 0.25oz de Absenta, 0.5oz de almíbar. Garnish: twist de limón.",
+        "bebidaBase": "whiskey",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "65",
+        "nombre": "Clover club",
+        "info": "batido y colado, copa cóctel",
+        "ingredientes": "2oz de gin, 1oz de jugo de limón, 1oz de almíbar, 1oz de vermut bianco, 1 clara de huevo, 1 tbs de frutos rojos.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "66",
+        "nombre": "Russian Spring Punch",
+        "info": "batido, vaso largo o copa hurricane",
+        "ingredientes": "1oz de vodka, 0.5oz de jugo de limón, 0.5oz de licor de cassis, 0.5oz de almíbar, completar con espumante (champagne, preseco). Garnish: rodaja de limón y moras.",
+        "bebidaBase": "champagne",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "67",
+        "nombre": "Kir Royale",
+        "info": "directo, copa flauta",
+        "ingredientes": "1oz licor de cassis, completar con espumante (champagne, proseco).",
+        "bebidaBase": "champagne",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "68",
+        "nombre": "Kir",
+        "info": "directo, vaso largo",
+        "ingredientes": "1oz de licor de cassis, completar con vino blanco.",
+        "bebidaBase": "vino",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "69",
+        "nombre": "Old Cuban",
+        "info": "macerado y batido, copa cóctail",
+        "ingredientes": "2oz de ron óscuro, 1oz de jugo de lima, 1oz de almíbar, 2 dash de bitter Angostura, 2/3 ramitas de menta y completar con espumante. Garnish: labeado/corona de azúcar de vainilla.",
+        "bebidaBase": "ron",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "69",
+        "nombre": "Mimosa",
+        "info": "directo, copa flauta",
+        "ingredientes": "2.5oz de jugo de naranja, 0.5oz de triple sec (opcional), completar con espumante secp (champagne, proseco). Garnish: twist de naranja (opcional).",
+        "bebidaBase": "champagne",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "70",
+        "nombre": "Aperol Collins",
+        "info": "batido/directo, vaso largo, variacion original del autor",
+        "ingredientes": "1.5oz de gin, 1oz de Aperol, 1oz de jugo de limón, 0.5oz de almíbar, completar con soda. Garnish: rodaja de naranja.",
+        "bebidaBase": "gin",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "71",
+        "nombre": "Penicillin",
+        "info": "batido, vaso corto",
+        "ingredientes": "2oz de whiskey, 0.75oz de jugo de limón, 0.75oz de almíbar de miel, 2 monedas/rodajas de jengibre, 1 dash de Angostura. Garnish: rodaja de jengibre caramelizada.",
+        "bebidaBase": "whiskey",
+        "tipo": "regenerativo/fuerte"
+    },
+    {
+        "id": "72",
+        "nombre": "Black Russian",
+        "info": "directo, vaso corto",
+        "ingredientes": "2oz de vodka, 1oz de licor de café. Garnish: cereza (opcional).",
+        "bebidaBase": "vodka",
+        "tipo": "regenerativo/fuerte"
+    },
+    {
+        "id": "73",
+        "nombre": "White Russian",
+        "info": "batido, vaso corto",
+        "ingredientes": "2oz de vodka, 1oz de licor de café, 1oz de crema de leche. Garnish: cereza (opcional).",
+        "bebidaBase": "vodka",
+        "tipo": "regenerativo/digestivo"
+    },
+    {
+        "id": "74",
+        "nombre": "Dirty Black Russian",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz de vodka, 1oz de licor de café, completar con Coca Cola.",
+        "bebidaBase": "vodka",
+        "tipo": "refrescante/regenerativo"
+    },
+    {
+        "id": "75",
+        "nombre": "Black Magic",
+        "info": "directo, vaso corto",
+        "ingredientes": "2oz de vodka, 1oz de licor de café, 1 dash de jugo de limón. Garnish: twist de limón.",
+        "bebidaBase": "vodka",
+        "tipo": "regenerativo/fuerte"
+    },
+    {
+        "id": "76",
+        "nombre": "Irish Russian",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz de vodka, 1oz de licor de café, completar con cerveza estilo stout (originalmente la Guiness de Irlanda).",
+        "bebidaBase": "vodka",
+        "tipo": "refrescante/regenerativo"
+    },
+    {
+        "id": "77",
+        "nombre": "Brown Russian",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz de vodka, 1oz de licor de café, completar con ginger ale (se puede reemplazar por gaseosa lima-limón.",
+        "bebidaBase": "vodka",
+        "tipo": "refrescante/regenerativo"
+    },
+    {
+        "id": "78",
+        "nombre": "Vader",
+        "info": "directo, vaso corto",
+        "ingredientes": "2oz de vodka, 1oz de Jaggermeister.",
+        "bebidaBase": "vodka",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "79",
+        "nombre": "California Russian",
+        "info": "directo, vaso corto",
+        "ingredientes": "2oz de vodka, 1oz de licor de café, 1 dash de triple sec. Garnish: octavo de naranja.",
+        "bebidaBase": "vodka",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "80",
+        "nombre": "Fernelo/Fermelo",
+        "info": "directo. vaso largo",
+        "ingredientes": "2oz/30% de Fernet, 5oz/70% de gaseosa de pomelo.",
+        "bebidaBase": "fernet",
+        "tipo": "aperitivo/refrescante"
+    },
+    {
+        "id": "81",
+        "nombre": "Fernecola (Fernet con Coca Cola)",
+        "info": "directo, vaso largo",
+        "ingredientes": "2oz/30% de Fernet, 5oz/70% de Coca Cola.",
+        "bebidaBase": "fernet",
+        "tipo": "aperitivo/refrescante"
+    },
+    {
+        "id": "82",
+        "nombre": "Ramos Fizz/New Orleans Fizz",
+        "info": "batido (mínimo 1 min) y colado, vaso largo",
+        "ingredientes": "1.5oz de gin, 1 clara de huevo, 2oz de crema de leche, 1oz de jugo de limón, 3 ó 4 gotas de agua de azahar (reemplazable por anís turco), 2 gotas de esencia de vainilla, 1 oz de almíbar simple, splash de soda. Garnish: rodaja de limón y media estrella de anís.",
+        "bebidaBase": "gin",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "83",
+        "nombre": "Golden Cadillac",
+        "info": "batido, copa cóctel",
+        "ingredientes": "1oz de licor de chocolate blanco, 1oz de crema de leche, 2oz de jugo de naranja, 0.75oz de licor de durazno.",
+        "bebidaBase": "licor",
+        "tipo": "dulce/digestivo"
+    },
+    {
+        "id": "84",
+        "nombre": "Aperol Piletero",
+        "info": "refrescado, jarra (2lts)",
+        "ingredientes": "1 taza de Aperol, 1 taza de frutillas, 1 naranja, 0.5 taza de jugo de naranja, 0.25 taza de jugo de limón, 0.25 taza de almíbar, completar con vino espumoso seco (champagne, cava).",
+        "bebidaBase": "aperol",
+        "tipo": "jarra"
+    },
+    {
+        "id": "85",
+        "nombre": "Cynar Julep Piletero",
+        "info": "refrescado y machacado, jarra (2lts)",
+        "ingredientes": "0.5 taza de almíbar, 6 ramas de menta, 0.25oz de limón, 1 pomelo rosado cortado en gajos, 1.5 tazas de Cynar, completar con gaseosa o jugo de pomelo.",
+        "bebidaBase": "cynar",
+        "tipo": "jarra"
+    },
+    {
+        "id": "86",
+        "nombre": "Jarra de Gin casí pornográfica",
+        "info": "refrescado, jarra (2lts)",
+        "ingredientes": "2 tazas de gin, 1 taza de almíbar de vainilla, 2 tazas de jugo de pomelo, pulpa de maracuya, completar con espumoso seco (champagne, cava).",
+        "bebidaBase": "gin",
+        "tipo": "jarra"
+    },
+    {
+        "id": "87",
+        "nombre": "Pimm´s Cup",
+        "info": "refrescado, jarra (2lts)",
+        "ingredientes": "1 pepino, 1 taza de frutillas, 1 naranja, 1 limón, 2 ó 3 ramas de menta, 2 tazas de Pimm´s (se puede reemplazar por gin, vodka, whiskey o la bebida que desees), completar con gaseosa lima-limón o ginger ale.",
+        "bebidaBase": "Pimm´s",
+        "tipo": "jarra"
+    },
+    {
+        "id": "88",
+        "nombre": "Whiskey Jar Para Terminar ATR",
+        "info": "refrescado, jarra (2lts)",
+        "ingredientes": "2 tazas de whiskey, 0.5 taza de triple sec, 0.5 taza de licor de cassis, 0.5 taza de jugo de lima, completar con soda o gaseosa lima-limón.",
+        "bebidaBase": "whiskey",
+        "tipo": "jarra"
+    },
+    {
+        "id": "89",
+        "nombre": "Sangria Española",
+        "info": "reposado y refrescado, jarra (2lts)",
+        "ingredientes": "1 botella/750ml de vino rojo/tinto joven, 2 duraznos/melocotones, 1 manzana, 1 taza de jugo de naranja, 1oz de jugo de limón, 1 trozo de canela en rama, 2oz de almíbar, gaseosa de limón o naranja (opcional).",
+        "bebidaBase": "vino",
+        "tipo": "jarra"
+    },
+    {
+        "id": "90",
+        "nombre": "Morrón Candy",
+        "info": "batido y colado, vaso corto",
+        "ingredientes": "1.75oz de whiskey, 0.5oz de almíbar de morrón, 0.5oz de triple sec, 0.5oz de almíbar picante. Garnish: un chila/ají y una flor.",
+        "bebidaBase": "whiskey",
+        "tipo": "fuerte/especiado"
+    },
+    {
+        "id": "91",
+        "nombre": "Poción N°7",
+        "info": "batido y colado, copa balón",
+        "ingredientes": "1.75oz de gin, 2oz de jugo de pomelo, 1.5oz de almíbar de hibíscus, 1oz de Strega. Garnish: hibíscus.",
+        "bebidaBase": "gin",
+        "tipo": "especiado"
+    },
+    {
+        "id": "92",
+        "nombre": "Pink Gun",
+        "info": "batido y colado, vaso corto",
+        "ingredientes": "0.5oz de vodka, 2oz de Gancia, 0.75oz de jugo de arándanos, 0.75oz de almíbar de hibíscus, dash de jugo de limón, 2 monedas/rodajas de jengibre. Garnish: twist de limón y menta.",
+        "bebidaBase": "gancia",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "93",
+        "nombre": "Ocaso",
+        "info": "batifo y colado, vaso barrilito o vaso corto",
+        "ingredientes": "0.75oz de whiskey, 1.5oz de Aperol, 1oz de jugo de pomelo, 0.75oz almíbar, 0.5oz de maracuyá. Garnish: cítrico deshidratado.",
+        "bebidaBase": "aperol",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "94",
+        "nombre": "Gostoso",
+        "info": "batido y colado, vaso largo",
+        "ingredientes": "1.5oz de cachaca, 1oz de vermut bianco, 1.5oz de jugo de limón, 0.75oz de almíbar de frutos rojos, 1oz de almíbar. Garnish: frutos rojos y rodaja de limón.",
+        "bebidaBase": "cachaca",
+        "tipo": "aperitivo"
+    },
+    {
+        "id": "95",
+        "nombre": "Granny Poison",
+        "info": "batido, colado y decantado, vaso tato o vaso corto",
+        "ingredientes": "2oz de gancia, 0.5oz de ron, 1oz de almíbar de canela, 0.5oz de limón, 0.25oz de licor de manzana, perfume de botánicos. Garnish: menta y limón.",
+        "bebidaBase": "gancia",
+        "tipo": "especiado"
+    },
+    {
+        "id": "96",
+        "nombre": "Cardinale",
+        "info": "directo, vaso corto",
+        "ingredientes": "1oz de vermut seco o bianco, 1oz de red bitter (Campari), 1oz de gin.",
+        "bebidaBase": "gin",
+        "tipo": "fuerte/seco"
+    },
+    {
+        "id": "97",
+        "nombre": "Charro Negro",
+        "info": "directo, vaso corto",
+        "ingredientes": "1.5oz de tequila, 0.5oz de jugo de limón, completar con Coca Cola, pizca de sal. Garnish: rodaja de limón.",
+        "bebidaBase": "tequila",
+        "tipo": "fuerte"
+    },
+    {
+        "id": "98",
+        "nombre": "Paloma",
+        "info": "directo, vaso largo",
+        "ingredientes": "1.5oz de tequila, 0.5oz de jugo de limón, pizca de sal, completar con gaseosa de pomelo. Garnish: rodaja de pomelo.",
+        "bebidaBase": "tequila",
+        "tipo": "aperitivo/refrescante"
+    },
+    {
+        "id": "99",
+        "nombre": "El Matador",
+        "info": "batido y colado, copa flauta o vaso largo",
+        "ingredientes": "1.5oz de tequila, 0.5oz de jugo de limón, 4oz/completar con jugo de piña/ananá. Garnish: rodaja de limón.",
+        "bebidaBase": "tequila",
+        "tipo": "refrescante"
+    },
+    {
+        "id": "100",
+        "nombre": "Brandy Daisy",
+        "info": "batido, vaso corto o mediano",
+        "ingredientes": "2oz de brandy/cognac, 1oz de jugo de limón, 0.35oz de granadina, dash de soda. Garnish: frutos rojos.",
+        "bebidaBase": "brandy",
+        "tipo": "fuerte"
+    }
+]

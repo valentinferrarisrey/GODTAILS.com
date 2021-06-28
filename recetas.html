@@ -1,3 +1,4 @@
+<!-- ABRIR CON LIVE SERVER-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -11,16 +12,35 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' href='style.css'>
         <title>GODTAILS</title>
-        <link rel="icon" href="icono3.ico">
+        <link rel="icon" href="icono.ico">
     </head>
     <body>
         <header>
-            <h1>GODTAILS.COM</h1>
+            <h1 class="encabezado" id="god">GOD</h1><h1 class="encabezado" id="tails">TAILS</h1>
+            <h3 id="slogan">Las mejores recetas de los mejores cocktails.</h3>
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="recetas.html">RECETAS</a></li>
-                <li><a href="info.html">SOBRE MI</a></li>
+                <li class="nav"><a id="homenav" class="navlink" href="index.html">HOME</a></li>
+                <li class="nav"><a id="recipesnav" class="navlink" href="recetas.html">RECETAS</a></li>
+                <li class="nav"><a id="infonav" class="navlink" href="info.html">SOBRE MI</a></li>
             </ul>
+            <div id="divBuscador">
+                <input type="search" id="buscador" placeholder="Buscá tu trago aquí!!">
+                <button id="buscar">buscar recetas</button>
+                <div id="error"></div>
+            </div>
         </nav>
+        <main>
+            <div style="display: none" id="resultados"></div>
+            <h2 class="tituloPestanas">Recetas:</h2>
+            <div id="recetas"></div>
+        </main>
+        <footer>
+            <h4 id="tituloFooter">De un <b>bartender</b> para el <b>mundo</b>.</h4>
+            <p id="parrafoFooter">Hecha y escrita por <i>Valentin Ferraris Rey</i> desde la mismísima Argentina.</p>       
+        </footer>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="recetas.js"></script>
+    </body>
+</html>

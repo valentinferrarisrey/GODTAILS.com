@@ -6,7 +6,7 @@ class Bebida { //creo la clase bebida
         //creo este metodo para dar la info sobre la bebida elegida y borrar informacion de busquedas anteriores
     } mostrarData() {  
         let data = document.createElement("p");
-        data.innerHTML = "Buscaste <b>"+ this.nombre + "</b> ahí te van algunos datos sobre él antes de que lo uses para preparar tu <b>PROPIO</b> trago: <br> - Grado alcohólico: "+ this.gradoAlcoholico + "<br> - Sabor: "+ this.sabor;
+        data.innerHTML = "Buscaste <b class='nombreTrago'>"+ this.nombre + "</b> ahí te van algunos datos sobre él antes de que lo uses para preparar tu <b>PROPIO</b> trago: <br> - Grado alcohólico: "+ this.gradoAlcoholico + "<br> - Sabor: "+ this.sabor;
         let padre = document.getElementById("resultados") 
         padre.innerHTML = "";
         padre.appendChild(data)
@@ -15,8 +15,10 @@ class Bebida { //creo la clase bebida
    }
 //creo los objetos de las distintas bebidas dentro de esta misma clase.
 const gin = new Bebida("Gin", "40", "Variado, puede ser citrico, especiado y hasta con sabor a pepino!");
-const ron = new Bebida("Ron", "40", "Suele ser dulce, puede variar en más o menos amaderado y notas específicas");
-const vodka = new Bebida("Vodka", 38, "Suele ser bastante neutro o básico, puede tener pequeñas variaciones en algunas notas");
+const ron = new Bebida("Ron", "40", "Suele ser dulce, puede variar en más o menos amaderado y notas específicas.");
+const vodka = new Bebida("Vodka", "38", "Suele ser bastante neutro o básico, puede tener pequeñas variaciones en algunas notas.");
+const whiskey = new Bebida("Whiskey", "38-40", "Si ya es variado con los nombres que puede tener dependiendo de donde fue hecho o con que ingredientes (scotch: escoces, ireland: irlandes, bourbon: de EEUU, rye: de trigo/centeno, corn: de maiz, etc.) puede ser aun mas variado con sus posibles sabores, es una bebida digna de cata y goce.")
+const brandy =new Bebida("Brandy/Cognac", "38-40", "con sabor a vino fuerte amaderado, su nombre deriba de la region francesa que lo vio nacer y  solo a los brandys que surgan de alli se les puede llamar 'Conac', el resto son solo eso, brandys.")
 
 //creo todos los arrays sobre cada trago para poder poner con que ingredientes entan hechos cada uno.
 const ginTonic = ["30% de gin", " 70% de agua tonica", " twist o cascara de limon."];
@@ -28,6 +30,18 @@ const daiquiri = ["2oz de ron blanco", " 1oz de jugo de limon/lima", " 1oz de al
 const kamikaze = ["2oz vodka", " 1oz de triple sec", " 1oz de jugo de limon."];
 const destornillador = ["2oz/30% de vodka", " 5oz/70% de jugo de naranja", " dash de soda(opcional)."];
 const cosmopolitan = ["1,75oz de vodka", " 0,5oz de triple sec", " 1oz de jugo de arandanos", " 0,5oz jugo de lima/limon", " almibar (opcional)", " cascara de lima/limon."];
+const horseNeck = ["1,25/1,50oz de whiskey"," completar con ginger ale (5oz/200ml aprox)(se puede reemplazar por gaseaso lima-limon"," opcional: dash de bitter Angostura", " twist/cascara de limon"];
+const whiskeySour = ["2oz de whiskey", " 1 oz de jugo de limon"," 1oz almibar", " opcional: 0,5/1 clara de huevo (para mas espuma)", " 3 gotas de bitter Angostura"];
+const oldFashioned = [" 1,5oz de whiskey", " 1 cucharada de azucar (o 1/2oz de almibar", "2 ó 3 dashes de bitter Angostura", " opcional: golpe/dash de soda"];
+const manhattan = ["2oz de rye/bourbon/whiskey", " 0,75oz vermut rosso", " 1 dash de bitter Angostura"];
+const brandyAlexander = ["1oz de brandy/cognac", " 1oz de licor de crema de cacao/chocolate", " 1oz crema de leche", " opcional: 0,5oz almibar"];
+const sidecar = ["2oz de brandy/cognac", " 1oz de jugo de limon", " 1oz de triple sec", " 1 dash de almibar"];
+const brandyDaisy = [" 2oz de brandy/cognac", " 1oz de jugo de limon", " 1 dash/0,25oz de granadina", " 1 dash de soda", " frutos rojos"];
+
+//declaramos la variable que reinicia las busquedas anterioriores por el aside y las borra en caso de que usemos otro tipo de busqueda
+const reinicioAside = () => {
+    $("#rtaAside").html("")
+}; 
 
 //inicializo array de las entradas y variable para que sea global
 const arrayEntradas = []
@@ -56,24 +70,31 @@ const mostrarReceta3 = function(trago) {
     padre.innerHTML = "";
     padre.appendChild(receta);  
 }
-
-//declaraciones globales necesarias para la busqueda y que necesitan estar cargadas antes de apretar el boton para que no salte error 
-let receta1 = document.createElement("article");
-receta1.setAttribute("id", "receta1");
-document.getElementById("recetas").appendChild(receta1);
-
+//esta ultima la hago con jQuery para demostrar que se utilizarlo
+const mostrarReceta4 = function(trago){
+    $("#receta4").append("<p>Este trago lleva " + trago.length + "ingredientes, y estos son: "+ trago + "</p>");
+}
 //declaro la variable del boton para luego aplicarle eventos y funciones.
 let botonBuscar = document.getElementById("buscar");
 botonBuscar.addEventListener("click", agregarEntrada)
 //agrega al array de entradas la entrada (todavia no le doy un uso pero lo dejo pq en un futuro a lo mejor si).
 function agregarEntrada(){
-     arrayEntradas.push(document.getElementById("buscador").value.toLowerCase());
+     arrayEntradas.unshift(document.getElementById("buscador").value.toLowerCase());
      console.log(arrayEntradas);
      }
 //evento del boton que acciona al algoritmo principal de la pagina.
 botonBuscar.addEventListener("click", mostrarInfo)
 //muestra la info solicitada.
 function mostrarInfo() {
+        //quitamos las busquedas por el aside anteriores en caso de que las hubiera.
+        reinicioAside();
+        //hacemos aparecer con una animacion los distintos constenedores de informacion que se mantenian oculto para que no interfirieran en caso que se realizara la busqueda por medio del aside.
+        $("#resultados").slideDown(400);
+        $("#recetas").slideDown(400);
+        //hacemos aparecer el titulo "recetas sugeridas" para que no este siempre
+        $("#recetasSugeridas").html('<h2>Recetas sugeridas:</h2>')
+        //borramos la info del trago 4 para que en caso de haber buscado antes "whiskey" que tiene un trago mas su informacion no permanezca con otras bebidas
+        $("#nombreTrago4, #receta4").html("");
         let entrada1 = document.getElementById("buscador").value.toLowerCase();
         console.log(entrada1);
         //vuelve el buscador a 0 despues de realizada la busqueda.
@@ -125,27 +146,50 @@ function mostrarInfo() {
             nombretrago9.innerHTML = "Destornillador:"
             mostrarReceta3(destornillador);
             break;
+        case "whiskey": //en estos dos ultimos "case" usa jQuery para demostrar que se utilizarlo
+        case "bourbon":
+        case "wiskey":
+        case "whisky":
+            whiskey.mostrarData();
+            $("#nombreTrago1").html("Old Fashioned");
+            mostrarReceta1(oldFashioned);
+            $("#nombreTrago2").html("Horse`s Neck");
+            mostrarReceta2(horseNeck);
+            $("#nombreTrago3").html("Manhattan");
+            mostrarReceta3(manhattan);
+            $("#nombreTrago4").html("Whiskey Sour");
+            mostrarReceta4(whiskeySour);
+            break;
+        case "brandy":
+        case "cognac":
+            brandy.mostrarData();
+            $("#nombreTrago1").html("Brandy Alexander");
+            mostrarReceta1(brandyAlexander);
+            $("#nombreTrago2").html("Sidecar");
+            mostrarReceta2(sidecar);
+            $("#nombreTrago3").html("Brandy Daisy");
+            mostrarReceta3(brandyDaisy);
+            break;
         default:
-            //dejo el alert en vez de utilizar el DOM pq me parece que en este caso especifico esta bien que salte una alerta al momento de realizar una busqueda erronea o inexistente.
-            alert("la bebida ingresada no es válida o no esta en la página aún, por favor prueba con otra");
-
+            //salta una alerta al momento de realizar una busqueda erronea o inexistente.
+            $("#error").html('<p id="pError">La bebida ingresada no es válida o no esta implementada en la página aún, por favor prueba con otra.</p>');
+            $('#pError').css({ "display": "none",
+                              "background-color": "red",
+                              "color": "yellow"});
+            
+            $('#pError').fadeIn(500)
+                        .delay(4500)
+                        .fadeOut(500);
     }
 }
-//mostrador de busquedas realizadas
-//se procede a mostrar la ultima busqueda realizada luego de realizar una busqueda
-botonBuscar.addEventListener("click", mostrarBusquedas)
-function mostrarBusquedas(){
-    //se inicial y ponen a punto las variables, conversiones y datos necesarios utilizando JSON y local
+//mostrador de busquedas realizadas con parte en jQuery para mostrar que entiendo su uso.
+//se procede a mostrar la ultima busqueda realizada luego de realizar una busqueda.
+$("#buscar").click(function mostrarBusquedas(){
+    //se inician y ponen a punto las variables, conversiones y datos necesarios utilizando JSON y local
     const busquedasJSON = JSON.stringify(arrayEntradas);
     localStorage.setItem("array busquedas", busquedasJSON);
     let lista = JSON.parse(localStorage.getItem("array busquedas"));
-    //loop que muestra la ultima busqueda realizada
-   for (const busqueda of lista) {
-        let p = document.createElement("p");
-        p.setAttribute("class", "busqueda");
-        p.innerHTML = busqueda;
-        let padre = document.getElementById("busquedasRecientes");
-        padre.innerHTML = "Busquedas recientes: "
-        document.getElementById("busquedasRecientes").appendChild(p);
-    }
-  }
+    //se muestra la ultima busqueda realizada
+    const ultimaBusqueda = lista[0];
+    $("#busquedasRecientes").append(`<p class="busquedas"> ` + ultimaBusqueda +`</p>`)   
+  });
